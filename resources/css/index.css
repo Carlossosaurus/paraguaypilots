@@ -1,0 +1,188 @@
+* {
+    border: 0px solid red;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Header Section */
+
+#header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    overflow: hidden;
+} 
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.logo {
+    max-height: 100px;
+    margin-left: 20px;
+}
+
+#companyname {
+    font-family: "Roboto Mono";
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+    margin-left: 20px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+.navigation li {
+    padding: 0 10px;
+    font-size: 1.3rem;
+}
+
+.navigation a {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    transition: all .1s ease-in;
+
+}
+
+.navigation a:hover {
+    color: rgb(179, 179, 179);
+    text-shadow: none;
+    transition: all .1s ease-in;
+
+}
+
+/* Hero Section */
+
+.hero {
+    margin-top: 0px;
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/flightschool_hero_001.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.herobox {
+    position: relative;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(70, 50, 0, 0.7));
+    height: 330px;
+    width: 400px;
+    top: 80px;
+    left: 100px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 25px 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+
+}
+
+.herobox h1 {
+    font-size: 2rem;
+}
+
+.herobox {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.herobox p {
+    margin: 4px 0 6px;
+}
+
+
+.herobox .button {
+    display: inline-block;
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    padding: 15px 20px;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 200, 00, 0.9);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 1);;
+    transition: all .1s ease-in;
+}
+
+.herobox .button:hover {
+    background-color: rgba(14, 190, 250, 0.9);
+    transition: all .1s ease-in;
+    font-size: 1.4rem;
+}
+
+.herobox .button:active {
+    background-color: rgba(0, 140, 250, 0.9);
+    transition: all .02s ease-in;
+}
+
+/* Offers Section */
+
+.offers {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    background-image: url("../images/metal_jet.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.offerscon {
+    margin: 5% 0;
+    width: 28%;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgba(226, 226, 226, .7);
+    text-align: center;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+.offerscon img:hover {
+    
+    transition: all .1s ease-in;
+
+}
+
+.offerscon img {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 29px;
+}
+
+.offerscon h2, h3 {
+    margin-top: 0;
+    color: rgba(4, 25, 145, 0.76);
+    padding: 0 10%;
+}
+
