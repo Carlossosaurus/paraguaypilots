@@ -6,7 +6,7 @@
 html, body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
@@ -90,6 +90,74 @@ a {
     padding: 70px 0 0 0;
 }
 
+@media only screen and (max-width: 1032px) {
+
+    #companyname {
+        letter-spacing: 1px;
+    }
+
+    .navigation li {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+} 
+
+@media only screen and (max-width: 895px) {
+
+    #companyname {
+        letter-spacing: 0px;
+        margin-left: 5;
+        font-size: 1.2rem;
+    }
+
+    .navigation li {
+        font-size: .9rem;
+        padding: 3px;
+    }
+
+    .kontakt a {
+        background-color: rgb(202, 3, 3);
+        padding: 5px 5px;
+        border-radius: 24px;
+    }
+
+} 
+
+@media only screen and (max-width: 768px) {
+
+    .navigation li {
+        display: none;
+    }
+
+}
+
+   @media only screen and (max-width: 480px) {
+    
+    #header {
+        height: 100px;
+        justify-content: center;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .logo {
+        display: block;
+        max-height: 150px;
+        position: relative;
+        top: 10px;
+        margin: 0 auto;
+    }
+
+    #companyname {
+        display: none;
+    }
+}
+
 /* Hero Section */
 
 .hero {
@@ -112,7 +180,12 @@ a {
     width: 100%;
     top: 80px;
     background-color: rgba(0, 0, 0, 0.7);
+    text-shadow: 
+        2px 2px 2px red,    /* Roter Schatten, leicht verschoben */
+        4px 4px 5px blue,   /* Blauer Schatten, weiter verschoben */
+        6px 6px 8px green;  /* Grüner Schatten, am weitesten verschoben */
 }
+
 
 .title h1 {
     margin: 0;
@@ -178,6 +251,57 @@ a {
     transition: all .02s ease-in;
 }
 
+@media only screen and (max-width: 950px) {
+    
+    .hero {
+        height: 600px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+
+    .herobox {
+        top: 120px;
+        left: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .hero {
+        height: 500px;
+    }
+    
+    .title {
+        top: 50px;
+        font-size: 1.4rem;
+    }
+
+    .herobox {
+        top: 60px;
+        left: 2px;
+        scale: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .hero {
+        height: 450px;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .herobox {
+        top: 30px
+    }
+
+}
+
 /* Offers Section */
 
 .offers {
@@ -192,6 +316,7 @@ a {
     flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
+    
 }
 
 .sectiontitle {
@@ -228,20 +353,191 @@ a {
     border-radius: 29px;
 }
 
-.offerscon h2, h3 {
+.offerscon h2, .offerscon h3 {
     margin-top: 0;
     color: rgba(4, 25, 145, 0.76);
     padding: 0 10%;
 }
 
-.footer {
-    height: auto;
+@media only screen and (max-width: 980px) {
+
+    .offerscon {
+        width: 200px;
+        min-width: 80px;
+        flex-grow: 1;
+        margin: 0 3px 10px; 
+    }
+
+    .offerscon img {
+        padding: 10px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 29px;
+    }
+
+    .offerscon h2, .offerscon h3 {
+        margin-top: 0;
+        color: rgba(4, 25, 145, 0.76);
+        padding: 0 2%;
+    }
+    
+    
 }
 
-.footer h3 {
+@media only screen and (max-width: 680px) {
+    .offerscon {
+        width: 150px;
+        min-width: 80px;
+        flex-grow: 1;
+    }
+
+    .offerscon h3 {
+    display: none;    
+}
+    
+
+}
+
+/* Kunden */
+
+.sectiontitle2 {
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    margin: 80px auto 10px;
+    width: 100%;
+    color: black;
+}
+
+.customer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+
+.customerrow {
+    max-width: 600px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 2px;
+}
+
+.customercon {
+    width: 250px;
+    height: 500px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+
+.customertext {
+    background-color: rgba(0, 0, 0, 0.788);
+    padding: 0 20px;
+    height: 180px;
+    overflow: hidden;
+}
+
+
+.a1 {
+    background-image: url("../images/diego_perez.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a2 {
+    background-image: url("../images/ana_fernandez.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a3 {
+    background-image: url("../images/jorge-mendoza.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a4 {
+    background-image: url("../images/miguel_acosta.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customercon h2, .customercon h3 {
+    color: rgba(255, 255, 255, 01);
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .customerrow {
+        max-width: 500px;
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 2px;
+    }
+    
+    .customercon {
+        width: 200px;
+        height: 400px;
+        margin: 0;
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .customertext {
+        background-color: rgba(0, 0, 0, 0.788);
+        padding: 0 20px;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .customercon h2, .customercon h3 {
+       color: rgba(255, 255, 255, 01);
+       font-size: 1rem;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: auto;
+    background-color: black;
+}
+
+.copyright {
+    margin: 100px 20px 20px;
+}
+
+.footer h3, h6 {
     display: block;
     color: white;
     text-align: end;
-    margin: 100px 20px 20px;
-    padding: 0;
+    padding: 3px;
+    margin: 0;
 }
