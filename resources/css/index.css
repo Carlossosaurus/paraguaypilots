@@ -10,36 +10,42 @@ html, body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header Section */
 
 #header {
+    position: fixed;
     display: flex;
     background-color: black;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    overflow: hidden;
+    height: 90px;
+    width: 100%;
+    z-index: 100;
 } 
 
 .logo-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .logo {
-    max-height: 100px;
-    margin-left: 20px;
+    max-height: 120px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
 #companyname {
     font-family: "Roboto Mono";
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
     font-weight: 400;
     color: white;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .navigation {
@@ -50,13 +56,12 @@ html, body {
 }
 
 .navigation li {
-    padding: 0 10px;
-    font-size: 1.3rem;
+    padding: 0 13px;
+    font-size: 1.2rem;
 }
 
 .navigation a {
-    font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: .3px;
     text-decoration: none;
     color: white;
     transition: all .1s ease-in;
@@ -70,16 +75,48 @@ html, body {
 
 }
 
+.kontakt a {
+    background-color: rgb(202, 3, 3);
+    padding: 8px 24px;
+    border-radius: 24px;
+}
+
+.kontakt a:hover {
+    background-color: rgba(172, 6, 6, 0.9);
+    color: white;
+}
+
+.header-puffer{
+    padding: 70px 0 0 0;
+}
+
 /* Hero Section */
 
 .hero {
-    margin-top: 0px;
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-image: url("../images/flightschool_hero_001.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
+    max-width: 1400px;
+    margin: 0px auto 0;
+}
+
+.title {
+    font-family: "roboto mono";
+    letter-spacing: 6px;
+    position: relative;
+    text-align: center;
+    font-size: 3.4rem;
+    width: 100%;
+    top: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title h1 {
+    margin: 0;
+    padding: 20px 0;
 }
 
 .herobox {
@@ -88,7 +125,7 @@ html, body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(70, 50, 0, 0.7));
     height: 330px;
     width: 400px;
-    top: 80px;
+    top: 150px;
     left: 100px;
     color: white;
     border: 3px solid white;
@@ -99,7 +136,7 @@ html, body {
 
 }
 
-.herobox h1 {
+.herobox h2 {
     font-size: 2rem;
 }
 
@@ -153,21 +190,32 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sectiontitle {
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    margin: 80px auto 0;
+    width: 100%;
 }
 
 .offerscon {
-    margin: 5% 0;
-    width: 28%;
+    margin: 2% 10px 3%;
+    width: 25%;
     overflow: hidden;
     border-radius: 15px;
     background-color: rgba(226, 226, 226, .7);
     text-align: center;
     cursor: pointer;
     transition: all .1s ease-in;
+    min-width: 300px;
 }
 
 .offerscon img:hover {
-    
+
     transition: all .1s ease-in;
 
 }
@@ -186,3 +234,14 @@ html, body {
     padding: 0 10%;
 }
 
+.footer {
+    height: auto;
+}
+
+.footer h3 {
+    display: block;
+    color: white;
+    text-align: end;
+    margin: 100px 20px 20px;
+    padding: 0;
+}
